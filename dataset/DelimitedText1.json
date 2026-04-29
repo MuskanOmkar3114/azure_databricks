@@ -1,0 +1,69 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "instagram_usage_lifestyle_10000.csv",
+				"container": "blobtosql"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "daily_hours",
+				"type": "String"
+			},
+			{
+				"name": "night_usage",
+				"type": "String"
+			},
+			{
+				"name": "scrolling_frequency",
+				"type": "String"
+			},
+			{
+				"name": "sleep_hours",
+				"type": "String"
+			},
+			{
+				"name": "exercise_hours",
+				"type": "String"
+			},
+			{
+				"name": "stress_level",
+				"type": "String"
+			},
+			{
+				"name": "productivity_score",
+				"type": "String"
+			},
+			{
+				"name": "mood_score",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

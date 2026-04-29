@@ -1,0 +1,71 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date",
+				"type": "date"
+			},
+			{
+				"name": "age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "gender",
+				"type": "varchar"
+			},
+			{
+				"name": "daily_hours",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "night_usage",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "scrolling_frequency",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "sleep_hours",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "exercise_hours",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "stress_level",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "productivity_score",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "mood_score",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "UserActivity"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
